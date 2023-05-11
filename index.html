@@ -5,43 +5,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Richard Parado - Personal Website</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="hero">
-    <nav>
-      <a href="./index.html">RICHARD PARADO</a>
-      <ul>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#blog">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="header-text">
-      <img src="./assets/images/Profile Image.png" height="200" alt="Profile Image">
-      <h1>Hi, I'm Richard.</h1>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <a href="./index.html">RICHARD PARADO</a>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Data Analyst</p>
+        <h1>Hi, I'm <span>Richard</span> <br /> Parado from India.</h1>
+        
+      </div>
     </div>
   </div>
+  <!--about-->
   <div id="about">
-    <h2>About Me</h2>
-    <p></p>
-    <h3>Education</h3>
-    <p><strong>Bachelors of Mathematics</strong> - Paravatibai Chowgule College of Arts and Science - <em>Goa, India</em> </p>
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/Profile Image.jpg" alt="Profile Image">
+        </div>
+        <div class="about-col-2">
+          <h1>About Me</h1>
+          <p>This is a paragraph.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Microsoft Power BI</span><br />Skills description.</li>
+              <li><span>Python (Programming)</span><br />Skills description.</li>
+              <li><span>SQL</span><br />Skills description.</li>
+              <li><span>Microsoft Excel</span><br />Skills description.</li>
+          </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Oct 2020 - Present</span><br />Data Analyst at Analytics Station L.L.P</li>
+              <li><span>Feb 2020 - Sept 2020</span><br />Data Analust Intern at Analytics Station L.L.P</li>
+              
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Bachelors of Mathematics</span><br />Paravatibai Chowgule College of Arts and Science</li>
+            </ul>
+          </div>
+        </div>
 
-    <h3>Work Experience</h3>
-    <p><strong>Data Analyst</strong> - <a href="https://www.analyticsstation.com/">Analytics Station L.L.P</a> - <em>(Oct 2020 - Present)</em></p>
-    <p><strong>Data Analyst Intern</strong> - <a href="https://www.analyticsstation.com/">Analytics Station L.L.P</a> - <em>(Feb 2020 - Sept 2020)</em></p>
+      </div>
+
+    </div>
     
   </div>
   <div id="services">
     <h2>Services</h2>
-    <ul>
-      <li>Microsoft Power BI ⭐⭐⭐⭐⭐</li>
-      <li>Python (Programming) ⭐⭐⭐⭐</li>
-      <li>SQL ⭐⭐⭐</li>
-      <li>Microsoft Excel ⭐⭐⭐</li>
-  </ul>
+
 
 
   </div>
@@ -60,5 +90,21 @@
   <footer>
     <p>© Richard Parado.</p>
   </footer>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+    for(tablink of tablinks) {
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+
+</script>
+
 </body>
 </html>
