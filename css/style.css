@@ -40,7 +40,7 @@ nav ul li a:hover {
 }
 
 #header {
-    background-image: url(../images/home.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),#45A29E); /*--url(../images/home.jpg);--*/
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -49,6 +49,7 @@ nav ul li a:hover {
 
 .container {
     padding: 10px 10%;
+    text-align: center;
 
 }
 
@@ -121,7 +122,7 @@ nav ul li a:hover {
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 30% 40px;
 }
 
 .tab-links {
@@ -164,4 +165,206 @@ nav ul li a:hover {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+/* --services --*/
+#services {
+    padding: 30px 0;
+}
+.services-list {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #1F2833;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 40px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.services-list div:hover {
+    background: #45A29E;
+    transform: translateY(-10px);
+}
+
+/*--portfolio--*/
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work img {
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.layer {
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6),#45A29E);
+    border-radius: 10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    height: 0;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    padding: 0 40px;
+    position: absolute;
+    text-align: center;
+    transition: height 0.5s;
+    width: 100%;
+}
+
+.layer h3 {
+    margin-bottom: 20px;
+}
+
+.layer a {
+    background: #ffffff;
+    border-radius: 50%;
+    color: #45A29E;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 60px;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    border: 1px solid #45A29E;
+    border-radius: 6px;
+    color: #ffffff;
+    display: block;
+    margin: 50px auto;
+    padding: 14px 50px;
+    width: fit-content;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #45A29E;
+}
+
+/*--contact--*/
+.contact-text {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-text p {
+    margin-top: 30px;
+}
+
+.contact-text p i {
+    color: #45A29E;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.contact-text p a {
+    color: #C5C6C7;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #1F2833;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 15px;
+    padding: 5px;
+    text-decoration: none;
+    transition: transform 0.5s;
+
+}
+.social-icons a:hover {
+    color: #45A29E;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    background: #45A29E;
+    display: inline-block;
+}
+
+.contact-right form {
+    width: 100%;
+}
+form input, form textarea {
+    background: #1F2833;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+form btn2 {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 14px 60px;
+
+}
+
+.copyright {
+    background: #1F2833;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 25px 0;
+    text-align: center;
+    width: 100%;
 }

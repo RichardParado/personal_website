@@ -1,113 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Parado - Personal Website</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <a href="./index.html">RICHARD PARADO</a>
-        <ul>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#blog">BLOG</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="header-text">
-        <h1>Hi, I'm <span>Richard</span><br /> Parado.</h1>
-        <p>Data Analyst</p>
-      </div>
-    </div>
-  </div>
-  <!--about-->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="./images/Profile Image.jpg" alt="Profile Image">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>This is a paragraph.</p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Microsoft Power BI</span><br />Skills description.</li>
-              <li><span>Python (Programming)</span><br />Skills description.</li>
-              <li><span>SQL</span><br />Skills description.</li>
-              <li><span>Microsoft Excel</span><br />Skills description.</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard Parado - Personal Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/01649aff1d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="./index.html">RICHARD PARADO</a>
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Richard</span><br />
+            Parado.
+          </h1>
+          <p>Data Analyst</p>
+        </div>
+      </div>
+    </div>
+    <!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Profile Image.jpg" alt="Profile Image" />
           </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>Oct 2020 - Present</span><br />Data Analyst at Analytics Station L.L.P</li>
-              <li><span>Feb 2020 - Sept 2020</span><br />Data Analyst Intern at Analytics Station L.L.P</li>
-              
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>Bachelors of Mathematics</span><br />Paravatibai Chowgule College of Arts and Science</li>
-            </ul>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi there! My name is Richard Parado, and I am a data analyst with
+              a passion for uncovering insights and telling compelling stories
+              through data. With 3+ years of experience in the field, I have
+              developed a strong skillset in data analysis, visualization, and
+              reporting. I have a bachelor's degree in Mathematics and have
+              worked in a variety of industries, including Retail, Hospitality,
+              and Real Estate. Through my work, I have developed expertise in a
+              range of data analysis tools, including SQL, Python, Excel, and
+              Power BI. What I love most about my work is the opportunity to
+              take complex data sets and turn them into actionable insights that
+              can drive business decisions. Whether I am developing interactive
+              dashboards, web scraping, or data mining, I am constantly looking
+              for ways to make data more accessible and impactful for my
+              clients. When I'm not working with data, you can find me watching
+              the English Premier League. Thank you for visiting my website, and
+              I look forward to connecting with you!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Microsoft Power BI</span><br />Data Modelling | Data
+                  Visualisation | DAX | Power Query | Collaboration and Sharing
+                </li>
+                <li>
+                  <span>Python (Programming)</span><br />Data manipulation and
+                  Analysis | Data Visualisation | Web Scraping
+                </li>
+                <li>
+                  <span>SQL</span><br />Data Quering | Data Manipulation | Data
+                  Modelling
+                </li>
+                <li>
+                  <span>Microsoft Excel</span><br />Data Organisation | Data
+                  Analysis | Data Visualisation | Automation | Collaboration
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Oct 2020 - Present</span><br />Data Analyst at Analytics
+                  Station L.L.P
+                </li>
+
+                <li>
+                  <span>Feb 2020 - Sept 2020</span><br />Data Analyst Intern at
+                  Analytics Station L.L.P
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelors of Mathematics</span><br />Paravatibai
+                  Chowgule College of Arts and Science
+                </li>
+                <li>
+                  <span>HSSC Science</span><br />M.E.S Higher Higher Secondary
+                  School
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
       </div>
-
     </div>
-    
-  </div>
-  <!--Services-->
-  <div id="services">
-    <div class="container">
-
+    <!--Services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h2>Data Visualisation</h2>
+            <p>
+              Creating Dashboards and reports in Power BI. Visualising data
+              using using python packages.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Analysis</h2>
+            <p>Data Mining, ETL, Missing data and outlier handling.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Scraping</h2>
+            <p>Scraping data using Selenium Webdriver and BeatifulSoup.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <h2>Services</h2>
+    <!--Portfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/Profile Image.jpg" alt="" />
+            <div class="layer">
+              <h3>Sales Insights</h3>
+              <p>Description</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+      <div class="container">
+        <div class="contact-text">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-envelope"></i
+            ><a href="mailto:richard.parado2908@gmail.com"
+              >richard.parado2908@gmail.com</a
+            >
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +91 9834736163</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/richardparado/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/RichardParado"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <a href="#" download class="btn btn2">Download CV</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Richard Parado.</p>
+      </div>
+    </div>
 
-
-
-  </div>
-  <div id="portfolio">
-    <h2>Projects</h2>
-    <p></p>
-  </div>
-  <div id="blog">
-    <h2>Blog</h2>
-    <p></p>
-  </div>
-  <div id="contact">
-      <h2>Contact Me</h2>
-  </div>
-
-  <footer>
-    <p>© Richard Parado.</p>
-  </footer>
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-  function opentab(tabname) {
-    for(tablink of tablinks) {
-      tablink.classList.remove("active-link")
-    }
-    for(tabcontent of tabcontents) {
-      tabcontent.classList.remove("active-tab")
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab")
-  }
-
-</script>
-
-</body>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
 </html>
