@@ -49,7 +49,7 @@ nav ul li a:hover {
 
 .container {
     padding: 10px 10%;
-    text-align: center;
+
 }
 
 .logo {
@@ -59,7 +59,8 @@ nav ul li a:hover {
 .header-text {
     font-size: 30px;
     margin-top: 10%;
-    position: relative;
+    position: absolute;
+    
 }
 
 .header-text h1 {
@@ -113,7 +114,7 @@ nav ul li a:hover {
     flex-basis: 60%;
 }
 
-.about-col-2 h1 {
+.sub-title {
     color: #ffffff;
     padding-bottom: 10px;
 }
