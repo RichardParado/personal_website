@@ -22,6 +22,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a img {
+    width: 140px;
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -40,7 +44,7 @@ nav ul li a:hover {
 }
 
 #header {
-    background: linear-gradient(rgba(0,0,0,0.6),#45A29E); /*--url(../images/home.jpg);--*/
+    background: url(../images/home.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -59,8 +63,8 @@ nav ul li a:hover {
 
 .header-text {
     font-size: 30px;
-    margin-top: 10%;
-    position: absolute;
+    margin-top: 15%;
+    position: relative;
     
 }
 
@@ -367,4 +371,9 @@ form btn2 {
     padding: 25px 0;
     text-align: center;
     width: 100%;
+}
+
+/* -- Portfolio Page --*/
+.portfolio {
+    padding: 50px 0 0;
 }
