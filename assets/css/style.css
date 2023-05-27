@@ -56,3 +56,8 @@ nav ul li a {
     color: #66FCF1;
 }
 
+@media (max-width: 780px) {
+    nav ul {
+        display: none;
+    }
+}
