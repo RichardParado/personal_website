@@ -214,6 +214,15 @@ footer {
     color: #45A29E;
 }
 
+#resume-download {
+    font-size: 0.7rem;
+}
+
+#resume-download:hover {
+    color: #0B0C10;
+}
+
+
 
 /* --portfolio page-- */
 
