@@ -223,11 +223,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
 }
 
 .all-project-item img {
-    width: 70%;
+    border-radius: 1rem;
+    width: 100%;
 }
 
 .all-project-item i {
