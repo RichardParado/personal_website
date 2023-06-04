@@ -33,6 +33,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #45A29E;
+}
+
 #home {
     background-image: url(../images/home.jpg);
     background-position: center;
@@ -151,6 +155,17 @@ nav ul li a {
     width: 100%;
 }
 
+.layer h3 {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.layer p {
+    line-height: 1.5rem;
+    padding: 0 2rem ;
+    text-align: center;
+}
+
 .layer i {
     color: #C5C6C7;
 }
@@ -234,6 +249,10 @@ footer {
     justify-content: center;
 }
 
+.all-project-item h3 {
+    text-align: center;
+}
+
 .all-project-item img {
     border-radius: 1rem;
     width: 100%;
@@ -247,6 +266,11 @@ footer {
     color: #45A29E;
 }
 
+.all-project-item p {
+    line-height: 1.5rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
 
 
 
