@@ -130,6 +130,10 @@ nav ul li a:hover {
 
 }
 
+.service-item h2 {
+    text-align: center;
+}
+
 .service-item p {
     font-size: .9rem;
     line-height: 1.5rem;
