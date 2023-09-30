@@ -63,7 +63,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 0;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
 }
 
@@ -74,6 +74,21 @@ nav ul li a:hover {
 
 .header h1 span {
     color: #66FCF1;
+}
+
+.skills {
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+}
+
+
+.skill {
+    text-align: center;
+}
+
+.skill i {
+    font-size: 4rem;
 }
 
 
