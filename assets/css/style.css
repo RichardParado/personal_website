@@ -82,9 +82,12 @@ nav ul li a:hover {
     justify-content: space-around;
 }
 
-
 .skill {
     text-align: center;
+}
+
+.skill a {
+    color: #C5C6C7;
 }
 
 .skill i {
@@ -287,39 +290,27 @@ footer {
 
 
 /* --portfolio page-- */
-
-
-.all-project-item {
+.skill-container {
     align-items: center;
-    border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 4rem;
+    height: auto;
 }
 
-.all-project-item h3 {
-    text-align: center;
+.project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
 }
 
-.all-project-item img {
+.project img {
     border-radius: 1rem;
+    margin-bottom: 1rem;
     width: 75%;
 }
 
-.all-project-item i {
-    color: #C5C6C7;
-}
 
-.all-project-item i:hover {
-    color: #45A29E;
-}
-
-.all-project-item p {
-    line-height: 1.5rem;
-    padding: 1rem 2rem;
-    text-align: start;
-}
 
 
 
