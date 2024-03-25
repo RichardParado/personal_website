@@ -260,12 +260,12 @@ footer {
     line-height: 1.5rem;
 }
 
-#contact a {
+#contact .contact-type {
     color: #C5C6C7;
     text-decoration: none;
 }
 
-#contact a:hover {
+#contact .contact-type:hover {
     color: #45A29E;
 }
 
