@@ -1,201 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Projects</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="icon" href="./assets/images/Favicon Logo.png" />
 
-    <script
-      src="https://kit.fontawesome.com/01649aff1d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section id="projects-home">
-      <div class="container">
-        <nav>
-          <a href="../index.html"
-            ><img
-              class="profile-logo"
-              src="../assets/images/Favicon Logo.png"
-              alt="Profile Logo"
-          /></a>
-          <ul>
-            <li><a href="../index.html#about">ABOUT</a></li>
-            <li><a href="../index.html#services">SERVICES</a></li>
-            <li><a href="../index.html#contact">CONTACT</a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <section id="portfolio-home">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/Favicon Logo.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./resume.html">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./portfolio.html">PORTFOLIO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-      </div>
+
+        <div class="container home-container">
+            <div class="container skill-container">
+                <div class="row">
+                    <div class="col">
+                        <a href="./portfolio.html#excel"><i class="bi bi-table display-1"></i></a>
+                        <p>Excel</p>
+                    </div>
+                    <div class="col">
+                        <a href="./portfolio.html#sql"><i class="bi bi-database display-1"></i></a>
+                        <p>SQL</p>
+                    </div>
+                    <div class="col">
+                        <a href="./portfolio.html#python"><i class="bi bi-code-slash display-1"></i></a>
+                        <p>Python</p>
+                    </div>
+                    <div class="col">
+                        <a href="./portfolio.html#powerbi"><i class="bi bi-bar-chart display-1"></i></a>
+                        <p>Power BI</p>
+                    </div>
+                    <div class="col">
+                        <a href="./portfolio.html#htmlcss"><i class="bi bi-window display-1"></i></a>
+                        <p>HTML/CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="all-projects">
-      <div class="container">
-        <div id="excel" class="skill-container">
-          <h2 class="sub-title">Excel Projects</h2>
-          <div class="project" id="personal-budget-tracker-excel">
-            <h3>Personal Budget Tracker</h3>
-            <img
-              src="../assets/images/Personal Budget Tracker - Thumbnail.png"
-              alt=""
-            />
-            <p>
-              The Personal Budget Tracker is a project implemented using
-              Microsoft Excel. This dashboard helps users to visualize a broad
-              view of their income and expenses providing basic insights into
-              their financial situation.
-            </p>
-            <p>
-              All transactions are recorded in the Transactions sheet and the
-              data is represented visually in the dashboard sheet. Few pivot
-              tables are created for summarization and to create pivot charts.
-              This dashboard also tracks your Net worth. This is easy and
-              hassle-free offline way of tracking your finances.
-            </p>
-            <p>For more details, click on the GitHub link below.</p>
-            <a
-              href="https://github.com/RichardParado/personal_budget_tracker_excel"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
+
+    <section id="excel">
+        <div class="container">
+            <h2 class="section-header">Excel Projects</h2>
         </div>
-        <div id="sql" class="skill-container">
-          <h2 class="sub-title">SQL Projects</h2>
-        </div>
-        <div id="python" class="skill-container">
-          <h2 class="sub-title">Python Projects</h2>
-        </div>
-        <div id="powerbi" class="skill-container">
-          <h2 class="sub-title">Power BI Projects</h2>
-          <div class="project" id="personal-finance-dashboard-powerbi">
-            <h3>Personal Finance Dashboard</h3>
-            <img
-              src="../assets/images/Personal Finance Dashboard - Thumbnail.png"
-              alt=""
-            />
-            <p>
-              The Personal Finance Dashboard is a project crafted using
-              Microsoft Power BI and Google Sheets. This dashboard empowers
-              users to visually track their income, expenses, and savings data,
-              providing insights into their financial situation.
-            </p>
-            <p>
-              All transactions are conveniently stored in a Google Sheet,
-              seamlessly connected to Power BI for auto-refreshing purposes.
-              This dynamic setup ensures hassle-free tracking of expenses,
-              allowing users to pinpoint where their money goes. Moreover, it
-              aids in monitoring saving goals and offers insights into income
-              and expense trends over specific periods. It also keeps a watchful
-              eye on your Net Worth.
-            </p>
-            <p>
-              For a deeper dive into the project, click on the GitHub link
-              below.
-            </p>
-            <a
-              href="https://github.com/RichardParado/personal_finance_dashboard_powerbi"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project" id="revenue-insights-dashboard-powerbi">
-            <h3>Revenue Insights Dashboard</h3>
-            <img
-              src="../assets/images/Revenue Insights Dashboard - Thumbnail.png"
-              alt=""
-            />
-            <p>
-              AtliQ Grands owns multiple five-star hotels across India. They
-              have been in the hospitality industry for the past 20 years. Due
-              to strategic moves from other competitors and ineffective
-              decision-making in management, AtliQ Grands are losing its market
-              share and revenue in the luxury/business hotels category. As a
-              strategic move, the managing director of AtliQ Grands wanted to
-              incorporate “Business and Data Intelligence” to regain their
-              market share and revenue. However, they do not have an in-house
-              data analytics team to provide them with these insights.
-            </p>
-            <p>
-              Their revenue management team had decided to hire a 3rd party
-              service provider to provide them with insights from their
-              historical data.
-            </p>
-            <p>
-              The Revenue Insights Dashboard, created using Microsoft Power BI,
-              aims to address these challenges by providing the management of
-              AtliQ Grands to analyze the performance of their business.
-            </p>
-            <p>
-              The data for this dashboard is sourced from codebasics' GitHub
-              page, enabling analysis of revenue and Occupancy data for AtliQ
-              Grands over a specified period.
-            </p>
-            <p>For more details, click on the GitHub link below.</p>
-            <a
-              href="https://github.com/RichardParado/revenue_insights_dashboard_powerbi"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project" id="sales-insights-dashboard-powerbi">
-            <h3>Sales Insights Dashboard</h3>
-            <img
-              src="../assets/images/Sales Insights Dashboard - Thumbnail.png"
-              alt=""
-            />
-            <p>
-              AtliQ Hardware is a company that supplies computer hardware and
-              peripherals to numerous clients. With a Head Office located in
-              Delhi and several Regional offices, the company faces challenges
-              in gaining insights for each region due to the dynamic growth of
-              the market.
-            </p>
-            <p>
-              The Sales Insights Dashboard, created using Microsoft Power BI and
-              MySQL, aims to address these challenges by providing the
-              management of AtliQ Hardware with tools to analyze the performance
-              of their business.
-            </p>
-            <p>
-              The data for this dashboard is sourced from codebasics' GitHub
-              page, enabling analysis of revenue and sales data for AtliQ
-              Hardware over a specified period.
-            </p>
-            <p>For more details, click on the GitHub link below.</p>
-            <a
-              href="https://github.com/RichardParado/sales_insights_dashboard_powerbi"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-          <div class="project" id="cricket-t20-best-xi-dashboard-powerbi">
-            <h3>Cricket T20 Best XI Dashboard</h3>
-            <img
-              src="../assets/images/Cricket T20 Best XI Dashboard - Thumbnail.png"
-              alt=""
-            />
-            <p>
-              This repository contains a Cricket Best XI Dashboard created using
-              Microsoft Power BI and Python. This Dashboard aims to select the
-              best players based on a set criteria. Data can be scraped or can
-              be retrieved from the JSON files provided.
-            </p>
-            <p>
-              The Dashboard is divided into different player positions such as
-              Openers, Middle Order, Finishers, All Rounder and Fast Bowlers.
-              Each player position has certain criteria set so that we can
-              select the optimal players in each position.
-            </p>
-            <p>
-              For more details, click on the GitHub link below.
-            </p>
-            <a
-              href="https://github.com/RichardParado/cricket_T20_bestXI_dashbaord_powerbi"
-              ><i class="fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <footer>Copyright ©️ 2023 Richard Parado</footer>
     </section>
-  </body>
+
+    <section id="sql">
+        <div class="container">
+            <h2 class="section-header">SQL Projects</h2>
+        </div>
+    </section>
+
+    <section id="python">
+        <div class="container">
+            <h2 class="section-header">Python Projects</h2>
+        </div>
+    </section>
+
+    <section id="powerbi">
+        <div class="container">
+            <h2 class="section-header">Power BI Projects</h2>
+            <div class="row align-items-center justify-content-center g-5 py-5">
+                <div class="col-lg-10">
+                    <div class="card project-item">
+                        <img class="card-img-top" src="../assets/images/Personal Finance Dashboard - Thumbnail.png"
+                            alt="Personal Finance Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Finance Dashboard</h5>
+                            <p class="card-text">The Personal Finance Dashboard is a project crafted using Microsoft
+                                Power BI
+                                and Google Sheets. This dashboard empowers users to visually track their income,
+                                expenses, and
+                                savings data, providing insights into their financial situation.
+                                <br><br>
+                                All transactions are conveniently stored in a Google Sheet, seamlessly connected to
+                                Power BI for
+                                auto-refreshing purposes. This dynamic setup ensures hassle-free tracking of expenses,
+                                allowing
+                                users to pinpoint where their money goes. Moreover, it aids in monitoring saving goals
+                                and
+                                offers insights into income and expense trends over specific periods. It also keeps a
+                                watchful
+                                eye on your Net Worth.
+                                <br><br>
+                                For a deeper dive into the project, click on the GitHub link below.
+                            </p>
+                            <a href="#"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="card project-item">
+                        <img class="card-img-top" src="../assets/images/Sales Insights Dashboard - Thumbnail.png"
+                            alt="Sales Insights Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Sales Insigts Dashboard</h5>
+                            <p class="card-text">AtliQ Hardware is a company that supplies computer hardware and
+                                peripherals to numerous clients. With a Head Office located in Delhi and several
+                                Regional offices, the company faces challenges in gaining insights for each region due
+                                to the dynamic growth of the market.
+                                <br><br>
+                                The Sales Insights Dashboard, created using Microsoft Power BI and MySQL, aims to
+                                address these challenges by providing the management of AtliQ Hardware with tools to
+                                analyze the performance of their business.
+                                <br><br>
+                                The data for this dashboard is sourced from codebasics' GitHub page, enabling analysis
+                                of revenue and sales data for AtliQ Hardware over a specified period.
+                                <br><br>
+                                For more details, click on the GitHub link below.
+                            </p>
+                            <a href="#"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="card project-item">
+                        <img class="card-img-top" src="../assets/images/Cricket T20 Best XI Dashboard - Thumbnail.png"
+                            alt="Cricket Analytics Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket Analytics Dashboard</h5>
+                            <p class="card-text">This repository contains a Cricket Best XI Dashboard created using
+                                Microsoft Power BI and Python. This Dashboard aims to select the best players based on a
+                                set criteria. Data can be scraped or can be retrieved from the JSON files provided.
+                                <br><br>
+                                The Dashboard is divided into different player positions such as Openers, Middle Order,
+                                Finishers, All Rounder and Fast Bowlers. Each player position has certain criteria set
+                                so that we can select the optimal players in each position.
+                                <br><br>
+                                For more details, click on the GitHub link below..</p>
+                            <a href="#"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="htmlcss">
+        <div class="container">
+            <h2 class="section-header">Web Design Projects</h2>
+        </div>
+    </section>
+
+    <section id="portfolio-footer" class="gradient-background">
+        <div class="container">
+            <footer>
+                <div>
+                    <span class="mb-3 mb-md-0">© 2024 Richard Parado</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="mailto:richard.parado2908@gmail.com"><i class="bi bi-envelope"></i></a>
+                    </li>
+                    <li class="ms-3"><a href="https://www.linkedin.com/in/richardparado/"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li class="ms-3"><a href="https://github.com/RichardParado"><i class="bi bi-github"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

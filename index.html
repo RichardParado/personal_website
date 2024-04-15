@@ -1,187 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Richard Parado - Personal Website</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" href="./assets/images/Favicon Logo.png">
-    <script
-    src="https://kit.fontawesome.com/01649aff1d.js"
-    crossorigin="anonymous"
-  ></script>
-  </head>
-  <body>
-    <section id="home">
-      <div class="container">
-        <nav>
-          <a href="./index.html"
-            ><img
-              class="profile-logo"
-              src="./assets/images/Favicon Logo.png"
-              alt="Profile Logo"
-          /></a>
-          <ul>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-        <div class="header">
-          <h1>HI, I'M <span>RICHARD PARADO</span></h1>
-          <h2>Data Analyst and Python Enthusiast</h2>
-        </div>
-        <div class="skills">
-          <div class="skill">
-            <a href="./pages/portfolio.html#excel"><i class="fa-solid fa-table"></i></a>
-            <h3>Excel</h3>
-          </div>
-          <div class="skill">
-            <i class="fa-solid fa-database"></i>
-            <h3>SQL</h3>
-          </div>          
-          <div class="skill">
-            <a href="./pages/portfolio.html#python"><i class="fa-brands fa-python"></i></a>
-            <h3>Python</h3>
-          </div>          
-          <div class="skill">
-            <a href="./pages/portfolio.html#powerbi"><i class="fa-solid fa-chart-simple"></i></a>
-            <h3>Power BI</h3>
-          </div>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Parado - Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section id="home" class="gradient-background">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/images/Favicon Logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/resume.html">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container home-container">
+            <div class="header-container">
+                <h1 class="display-2">HI, I'M <br><span>RICHARD PARADO</span></h1>
+                <p class="lead">Data Analyst and Python Enthusiast.</p>
+            </div>
+            <div class="container skill-container">
+                <div class="row">
+                    <div class="col">
+                        <i class="bi bi-table display-1"></i>
+                        <p>Excel</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-database display-1"></i>
+                        <p>SQL</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-code-slash display-1"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-bar-chart display-1"></i>
+                        <p>Power BI</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-window display-1"></i>
+                        <p>HTML/CSS</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="about">
-      <div class="container">
-        <h2 class="sub-title">About Me</h2>
-        <div class="about-section">
-          <img
-            class="profile-img"
-            src="./assets/images/Profile Image.jpg"
-            alt="Profile Image"
-          />
-          <div class="about-description">
-            <h3>Hello, I'm Richard Parado</h3>
-            <p>Welcome to my data-driven world! I'm Richard Parado, a passionate data analyst with a knack for transforming raw information into compelling narratives. With over 3 years of experience in the field, I've honed my skills in data analysis, visualization, and reporting.</p>
-            <h3>The Story So Far</h3>
-            <p>My journey into the realm of data began with a Bachelor's degree in Mathematics. Since then, I've ventured into diverse industries, including Retail and Hospitality, where I've unlocked valuable insights that drive business decisions.</p>
-            <h3>My Toolbox</h3>
-            <p>I'm not just a data enthusiast; I'm also a tool connoisseur. I wield a versatile arsenal, including SQL, Python, Excel, and Power BI. Whether I'm crafting interactive dashboards, mastering the art of web scraping, or delving into the depths of data mining, I'm on a mission to make data accessible and impactful for my clients.</p>
-            <h3>My Passion</h3>
-            <p>What fuels my passion for data? It's the thrill of unraveling complex data puzzles and turning them into actionable insights. I thrive on the challenge of finding hidden patterns, trends, and opportunities that can revolutionize businesses.</p>
-          </div>
+        <div class="container">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-4 text-center">
+                    <img src="./assets/images/Profile Image.jpg" alt="Profile Image">
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h4>Hello, I'm Richard Parado</h4>
+                    <p>Welcome to my data-driven world! I'm Richard Parado, a passionate data analyst with a knack for
+                        transforming raw information into compelling narratives. With over 3 years of experience in the
+                        field, I've honed my skills in data analysis, visualization, and reporting.</p>
+                    <h4>The Story So Far</h4>
+                    <p>My journey into the realm of data began with a Bachelor's degree in Mathematics. Since then, I've
+                        ventured into diverse industries, including Retail and Hospitality, where I've unlocked valuable
+                        insights that drive business decisions.</p>
+                    <h4>My Toolbox</h4>
+                    <p>I'm not just a data enthusiast; I'm also a tool connoisseur. I wield a versatile arsenal,
+                        including SQL, Python, Excel, and Power BI. Whether I'm crafting interactive dashboards,
+                        mastering the art of web scraping, or delving into the depths of data mining, I'm on a mission
+                        to make data accessible and impactful for my clients.</p>
+                    <h4>My Passion</h4>
+                    <p>What fuels my passion for data? It's the thrill of unraveling complex data puzzles and turning
+                        them into actionable insights. I thrive on the challenge of finding hidden patterns, trends, and
+                        opportunities that can revolutionize businesses.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="services">
-      <div class="container">
-        <h2 class="sub-title">My Services</h2>
-        <div class="service-list">
-          <div class="service-item">
-            <h2>Data Analysis and Reporting</h2>
-            <p>
-              Using Python and SQL for data analysis. Creating interactive reports and dashboards in Power BI.
-            </p>
-          </div>
-          <div class="service-item">
-            <h2>Whatsapp Business Integration</h2>
-            <p>Implementing WhatsApp Business API for businesses to communicate with customers.</p>
-          </div>
-          <div class="service-item">
-            <h2>Social Media Analytics</h2>
-            <p>Using the Facebook API to collect data on user interactions, likes, comments, etc. Analyzing social media data to derive insights for marketing strategies.</p>
-          </div>
-          <div class="service-item">
-            <h2>Web Scraping and Automation</h2>
-            <p>Utilizing Selenium for web scraping and data extraction. Automating repetitive tasks, such as form submissions or data retrieval.</p>
-          </div>
-          <div class="service-item">
-            <h2>Database Management</h2>
-            <p>SQL database design and optimization.</p>
-          </div>
-          <div class="service-item">
-            <h2>Content Generation and Marketing</h2>
-            <p>Using ChatGPT to generate content for blogs, social media, or marketing campaigns.</p>
-          </div>
+        <div class="container">
+            <h2 class="section-header">My Services</h2>
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analysis and Reporting</h5>
+                            <p class="card-text">Using Python and SQL for data analysis. Creating interactive reports
+                                and dashboards in Power BI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Web Development using Flask.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Database Management</h5>
+                            <p class="card-text">SQL database design and optimization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Whatsapp Business Integration</h5>
+                            <p class="card-text">Implementing WhatsApp Business API for businesses to communicate with
+                                customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Analytics</h5>
+                            <p class="card-text">Using the Facebook API to collect data on user interactions, likes,
+                                comments, etc. Analyzing social media data to derive insights for marketing strategies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card service-item">
+                        <div class="card-body">
+                            <h5 class="card-title">Content Generation</h5>
+                            <p class="card-text">Using ChatGPT to craft captions and ad copies for social media
+                                marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
     </section>
 
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="sub-title">My Projects</h2>
-        <div class="project-list">
-          <div class="project-item">
-            <img class="project-img" src="./assets/images/Personal Finance Dashboard - Thumbnail.png" alt="">
-            <div class="layer">
-              <h3>Personal Finance Dashboard</h3>
-              <p>Empowering Financial Insights with
-                Power BI</p>
-              <a href="pages/portfolio.html#personal-finance-dashboard-powerbi"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <section id="projects">
+        <div class="container text-center">
+            <h2 class="section-header">My Projects</h2>
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-4">
+                    <div class="card project-item">
+                        <img src="./assets/images/Personal Finance Dashboard - Thumbnail.png" class="card-img-top"
+                            alt="Personal Finance Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Finance Dashboard</h5>
+                            <p class="card-text">Empowering Financial Insights with Power BI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card project-item">
+                        <img src="./assets/images/Sales Insights Dashboard - Thumbnail.png" class="card-img-top"
+                            alt="Sales Insights Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Sales Insights Dashboard</h5>
+                            <p class="card-text">Empowering Financial Insights with Power BI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card project-item">
+                        <img src="./assets/images/Cricket T20 Best XI Dashboard - Thumbnail.png" class="card-img-top"
+                            alt="Cricket Analytics Dashboard Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Cricket Analytics Dashboard</h5>
+                            <p class="card-text">Empowering Financial Insights with Power BI</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="project-item">
-            <img class="project-img" src="./assets/images/Revenue Insights Dashboard - Thumbnail.png" alt="">
-            <div class="layer">
-              <h3>Revenue Insights Dashboard</h3>
-              <p>Revenue Insights in Hospitality Domain</p>
-              <a href="pages/portfolio.html#revenue-insights-dashboard-powerbi"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="project-item">
-            <img class="project-img" src="./assets/images/Personal Budget Tracker - Thumbnail.png" alt="">
-            <div class="layer">
-              <h3>Personal Budget Tracker</h3>
-              <p>A Personal Budget Tracker in Excel</p>
-              <a href="pages/portfolio.html#personal-budget-tracker-excel"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="project-item">
-            <img class="project-img" src="./assets/images/Sales Insights Dashboard - Thumbnail.png" alt="">
-            <div class="layer">
-              <h3>Sales Insights Dashboard</h3>
-              <p>Sales Insights of AtliQ Hardware by Codebasics</p>
-              <a href="pages/portfolio.html#sales-insights-dashboard-powerbi"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="project-item">
-            <img class="project-img" src="./assets/images/Cricket T20 Best XI Dashboard - Thumbnail.png" alt="">
-            <div class="layer">
-              <h3>Cricket T20 Best XI Dashboard</h3>
-              <p>Finding the Cricket T20 Best XI players</p>
-              <a href="pages/portfolio.html#cricket-t20-best-xi-dashboard-powerbi"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
+            <a class="button-link" href="./pages/portfolio.html"><button type="button" class="btn">See All</button></a>
+
         </div>
-        <a href="./pages/portfolio.html" class="btn">See more</a>
-      </div>
     </section>
 
     <section id="contact">
-      <div class="container">
-        <h2 class="sub-title">Conatct Me</h2>
-        <p>🔮 Unlock the Power of Data 🔮</p>
-        <p>Hey there, fellow data enthusiast! Whether you're on a quest to decipher the secrets hidden within your data or just curious about the world of analytics, I'm here to help you on your journey. Don't be a stranger; let's connect and make your data dreams come true!
-        </p>
-        <br>
-        <br>
-        <h3>Get in Touch with Your Data Wizard!</h3>
-        <a href="mailto:richard.parado2908@gmail.com" class="contact-type"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/richardparado/" class="contact-type"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/RichardParado" class="contact-type"><i class="fa-brands fa-github"></i></a>
-        <a href="./assets/documents/RichardParadoDataAnalyst.pdf" class="btn" id="resume-download">Download Resume</a>    
+        <div class="container text-center">
+            <h2 class="section-header">Contact Me</h2>
+            <p class="lead">🔮 Unlock the Power of Data 🔮</p>
+            <p>Hey there, fellow data enthusiast! Whether you're on a quest to decipher the secrets hidden within your
+                data or just curious about the world of analytics, I'm here to help you on your journey. Don't be a
+                stranger; let's connect and make your data dreams come true!</p>
+            <a class="button-link" href="./assets/documents/RichardParadoDataAnalyst.pdf"><button type="button" class="btn">Download Resume</button></a>
 
-      </div>
-      <footer>
-       Copyright ©️ 2023 Richard Parado
-      </footer>
+        </div>
     </section>
-    
-  </body>
+
+    <section id="footer" class="gradient-background">
+        <div class="container">
+            <footer>
+                <div>
+                    <span class="mb-3 mb-md-0">© 2024 Richard Parado</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a href="mailto:richard.parado2908@gmail.com"><i class="bi bi-envelope"></i></a>
+                    </li>
+                    <li class="ms-3"><a href="https://www.linkedin.com/in/richardparado/"><i
+                                class="bi bi-linkedin"></i></a></li>
+                    <li class="ms-3"><a href="https://github.com/RichardParado"><i class="bi bi-github"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
