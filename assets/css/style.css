@@ -14,19 +14,26 @@
 
 #header-text {
     align-items: center;
-
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    text-align: center;
 }
+
+#header-text span {
+    font-size: 4rem;
+}
+
 
 #about {
     height: 100vh;
 }
 
 #about > div {
-    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    min-height: 100%;
 }
 
 #about > div > div {
@@ -36,6 +43,7 @@
     justify-content: center;
     padding: auto;
 }
+
 
 .subheader {
     padding: 1rem 0;
@@ -49,6 +57,17 @@
 
 #contact {
     text-align: center;
+}
+
+#contact > div {
+    justify-content: center;
+}
+
+#contact .card {
+    background-image: linear-gradient(to bottom right,teal, black);
+    border: 0;
+    padding: 4rem;
+
 }
 
 #contact a {
