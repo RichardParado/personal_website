@@ -8,8 +8,28 @@
     height: 100vh;
 }
 
+#header::before {
+    background: black;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    z-index: 2;
+}
+
 #navbarNav {
     justify-content: end;
+}
+
+#navbarNav a:hover {
+    color: teal;
 }
 
 #header-text {
@@ -19,11 +39,13 @@
     flex-grow: 1;
     justify-content: center;
     text-align: center;
+    z-index: 2;
 }
 
-#header-text span {
-    font-size: 4rem;
+#header-text h1 {
+    font-size: 3rem;
 }
+
 
 #about {
     display: flex;
@@ -54,22 +76,25 @@
     width: 60%;
 }
 
-#contact {
-    text-align: center;
+#projects a {
+    color: #fff;
 }
 
-#contact > div {
-    justify-content: center;
+#projects a:hover {
+    color: teal;
 }
 
-#contact .card {
-    background-image: linear-gradient(to bottom right,teal, black);
-    border: 0;
+#contact div div {
+    padding: 2rem;
 }
 
 #contact a {
-    font-size: 1.5rem;
+    color: #fff;
     margin: 1rem;
+}
+
+#contact a:hover {
+    color: teal;
 }
 
 
