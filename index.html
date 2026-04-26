@@ -1,200 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Parado | Data Analyst & Python Enthusiast</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="icon" href="./assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-light" href="./index.html"><img src="./assets/images/logo.png"
-                    alt="Logo" width="30"></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" alt="Logo" width="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="nav">
-                <ul class="navbar-nav gap-1">
-                    <li class="nav-item"><a class="nav-link text-muted-teal" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted-teal" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted-teal" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link text-muted-teal" href="#contact">Contact</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-dark-1 py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6">
-                    <span class="badge rounded-pill px-3 py-2 mb-4 d-inline-flex align-items-center gap-2">
-                        <i class="fas fa-circle" style="font-size:.44rem;color:#22c55e;"></i> AVAILABLE FOR
-                        OPPORTUNITIES
-                    </span>
-                    <h1 class="display-3 fw-bold lh-1 mb-3">Hi, I'm<br><span class="accent">Richard Parado</span></h1>
-                    <p class="lead text-muted-teal mb-4">Data Analyst & Python Enthusiast —
-                        passionate about solving complex problems and creating efficient, data-driven solutions.</p>
-                    <div class="d-flex gap-4 mb-4">
-                        <div>
-                            <div class="stat-num">5+</div>
-                            <div class="text-muted-teal hero-details">Years Exp.</div>
+    <!-- Main Site -->
+    <div id="main-site">
+
+        <!-- Home -->
+        <section id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-badge">
+                            <i class="fas fa-circle" style="font-size:0.4375rem; color:#22c55e;"></i> Available for
+                            opportunities
                         </div>
-                        <div>
-                            <div class="stat-num">0</div>
-                            <div class="text-muted-teal hero-details">Projects</div>
+                        <h1 class="hero-title">Hi, I'm<br><span>Richard Parado</span></h1>
+                        <p class="hero-sub">Data Analyst & Python Enthusiast - passionate about solving complex problems
+                            and creating efficient, data-driven solutions.</p>
+                        <div class="hero-stats">
+                            <div class="h-stat"><span class="num">5+</span><span class="lbl">Years Exp.</span></div>
+                            <div class="h-stat"><span class="num">0</span><span class="lbl">Projects</span></div>
+                            <div class="h-stat"><span class="num">5+</span><span class="lbl">Tools</span></div>
                         </div>
-                        <div>
-                            <div class="stat-num">5+</div>
-                            <div class="text-muted-teal hero-details">Tools</div>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#contact" class="btn-primary-custom"><i class="fas fa-paper-plane"></i> Get in
+                                touch</a>
+                            <a href="./assets/documents/richardparado.pdf" target="_blank" class="btn-outline-custom"><i
+                                    class="fas fa-file-alt"></i> Resume</a>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#contact" class="btn btn-teal px-4 py-2 rounded-3"><i
-                                class="fas fa-paper-plane me-2"></i>Get
-                            in touch</a>
-                        <a href="./assets/documents/richardparado.pdf"
-                            class="btn btn-outline-secondary px-4 py-2 rounded-3 text-light"><i
-                                class="fas fa-file-alt me-2"></i>Resume</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center align-items-center py-5">
-                    <div class="profile-ring">
-                        <img src="./assets/images/profile-photo-square.png" alt="Richard Parado" />
-                    </div>
-
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="py-5 bg-dark-2">
-        <div class="container py-4">
-            <p class="section-label">What I Do</p>
-            <div class="divider mb-3"></div>
-            <h2 class="fw-bold mb-2">Turning data into decisions</h2>
-            <p class="text-muted-teal mb-5">From raw datasets to interactive dashboards and automated workflows.</p>
-            <div class="row g-4">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card-dark p-4 h-100">
-                        <div class="icon-box mb-3"><i class="fas fa-magnifying-glass"></i></div>
-                        <h6 class="fw-bold mb-2">Data Analysis</h6>
-                        <p class="text-muted-teal small mb-0">Transform raw data into clear, actionable insights
-                            that drive smarter decisions.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card-dark p-4 h-100">
-                        <div class="icon-box mb-3"><i class="fas fa-code"></i></div>
-                        <h6 class="fw-bold mb-2">Web Development</h6>
-                        <p class="text-muted-teal small mb-0">Build efficient internal tools and business
-                            applications using Django and Flask.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card-dark p-4 h-100">
-                        <div class="icon-box mb-3"><i class="fas fa-chart-bar"></i></div>
-                        <h6 class="fw-bold mb-2">Dashboard Creation</h6>
-                        <p class="text-muted-teal small mb-0">Design dynamic, interactive dashboards in Power BI to
-                            visualize key metrics.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card-dark p-4 h-100">
-                        <div class="icon-box mb-3"><i class="fas fa-robot"></i></div>
-                        <h6 class="fw-bold mb-2">AI Automation</h6>
-                        <p class="text-muted-teal small mb-0">Create intelligent automated workflows using n8n to
-                            streamline processes.</p>
+                    <div class="col-lg-4 py-5 d-flex justify-content-center">
+                        <div class="profile-ring">
+                            <img src="./assets/images/profile-photo-square.png" alt="Richard Parado">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills -->
-    <section id="skills" class="py-5 bg-dark-2">
-        <div class="container py-4">
-            <p class="section-label">Tech Stack</p>
-            <div class="divider mb-3"></div>
-            <h2 class="fw-bold mb-2">Technologies & Tools</h2>
-            <p class="text-muted-teal mb-5">A curated set of tools I use to build, analyze, and automate.</p>
-            <div class="mb-4">
-                <p class="text-muted-teal small fw-bold text-uppercase mb-2">Programming
-                    & Data</p>
-                <span class="skill-pill"><i class="fab fa-python accent"></i> Python</span>
-                <span class="skill-pill"><i class="fas fa-database accent"></i> SQL</span>
-                <span class="skill-pill"><i class="fas fa-file-excel accent"></i> Microsoft Excel</span>
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <p class="section-label">What I Do</p>
+                <div class="fancy-divider"></div>
+                <h2 class="section-title">Turning data into decisions</h2>
+                <p class="section-desc">From raw datasets to interactive dashboards and automated workflows - here's how
+                    I add value.</p>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h5>Data Analysis</h5>
+                            <p>Transform raw data into clear, actionable insights that drive smarter decisions.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h5>Web Development</h5>
+                            <p>Build efficient internal tools and business applications using Django and Flask.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <h5>Dashboard Creation</h5>
+                            <p>Design dynamic, interactive dashboards in Power BI to visualize key metrics.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="fas fa-robot"></i></div>
+                            <h5>AI Automation</h5>
+                            <p>Create intelligent automated workflows using n8n to streamline processes and boost
+                                productivity.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-4">
-                <p class="text-muted-teal small fw-bold text-uppercase mb-2">
-                    Visualization</p>
-                <span class="skill-pill"><i class="fas fa-chart-simple accent"></i> Microsoft Power BI</span>
-            </div>
-            <div class="mb-4">
-                <p class="text-muted-teal small fw-bold text-uppercase mb-2">Web
-                    Development</p>
-                <span class="skill-pill"><i class="fab fa-html5 accent"></i> HTML</span>
-                <span class="skill-pill"><i class="fab fa-css3-alt accent"></i> CSS</span>
-                <span class="skill-pill"><i class="fab fa-bootstrap accent"></i> Bootstrap</span>
-                <span class="skill-pill"><i class="fas fa-leaf accent"></i> Django</span>
-                <span class="skill-pill"><i class="fas fa-flask accent"></i> Flask</span>
-            </div>
-            <div class="mb-4">
-                <p class="text-muted-teal small fw-bold text-uppercase mb-2">Automation
-                    & Testing</p>
-                <span class="skill-pill"><i class="fas fa-spider accent"></i> Selenium WebDriver</span>
-                <span class="skill-pill"><i class="fas fa-gears accent"></i> n8n Automations</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-5 bg-dark-1">
-        <div class="container py-4">
-            <p class="section-label">Contact</p>
-            <div class="divider mb-3"></div>
-            <h2 class="fw-bold mb-2">Get in touch</h2>
-            <p class="text-muted-teal mb-5">Want to discuss a project, collaborate, or just say hello?</p>
-            <div class="card-dark p-4" style="max-width:600px;">
-                <a href="mailto:richard.parado2908@gmail.com" class="contact-link">
-                    <div class="icon-box"><i class="fas fa-envelope"></i></div>richard.parado2908@gmail.com<i
-                        class="fas fa-arrow-right ms-auto text-muted-teal"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/richardparado/" target="_blank" class="contact-link">
-                    <div class="icon-box"><i class="fa-brands fa-linkedin"></i></div>linkedin.com/in/richardparado<i
-                        class="fas fa-arrow-right ms-auto text-muted-teal"></i>
-                </a>
-                <a href="https://github.com/RichardParado" target="_blank" class="contact-link">
-                    <div class="icon-box"><i class="fa-brands fa-github"></i></div>github.com/RichardParado<i
-                        class="fas fa-arrow-right ms-auto text-muted-teal"></i>
-                </a>
-                <a href="./assets/documents/richardparado.pdf" class="contact-link">
-                    <div class="icon-box"><i class="fas fa-file-alt"></i></div>Download Resume<i
-                        class="fas fa-arrow-right ms-auto text-muted-teal"></i>
-                </a>
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container">
+                <p class="section-label">Tech Stack</p>
+                <div class="fancy-divider"></div>
+                <h2 class="section-title">Technologies & Tools</h2>
+                <p class="section-desc">A curated set of tools I use to build, analyze, and automate.</p>
+                <div class="skill-group">
+                    <p class="skill-group-label">Programming & Data</p>
+                    <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+                    <span class="skill-pill"><i class="fas fa-file-excel"></i> Microsoft Excel</span>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Visualization</p>
+                    <span class="skill-pill"><i class="fas fa-chart-pie"></i> Microsoft Power BI</span>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Web Development</p>
+                    <span class="skill-pill"><i class="fab fa-html5"></i> HTML</span>
+                    <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+                    <span class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                    <span class="skill-pill"><i class="fas fa-leaf"></i> Django</span>
+                    <span class="skill-pill"><i class="fas fa-flask"></i> Flask</span>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-label">Automation & Testing</p>
+                    <span class="skill-pill"><i class="fas fa-spider"></i> Selenium WebDriver</span>
+                    <span class="skill-pill"><i class="fas fa-cogs"></i> n8n Automations</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="bg-dark-1 text-center py-4" style="border-top:1px solid #071a19;color:#4d7a76;font-size:.82rem;">
-        &copy; 2026 <span class="accent fw-semibold">Richard Parado</span>
-    </footer>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <p class="section-label">Contact</p>
+                <div class="fancy-divider"></div>
+                <h2 class="section-title">Get in touch</h2>
+                <p class="section-desc">Want to discuss a project, collaborate, or just say hello? Feel free to reach
+                    out!</p>
+                <div class="contact-card">
+                    <a href="mailto:richard.parado2908@gmail.com" class="contact-link">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>richard.parado2908@gmail.com<i
+                            class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/richardparado/" target="_blank" class="contact-link">
+                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>linkedin.com/in/richardparado<i
+                            class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="https://github.com/RichardParado" target="_blank" class="contact-link">
+                        <div class="icon"><i class="fab fa-github"></i></div>github.com/RichardParado<i
+                            class="fas fa-arrow-right arrow"></i>
+                    </a>
+                    <a href="./assets/documents/richardparado.pdf" target="_blank" class="contact-link">
+                        <div class="icon"><i class="fas fa-file-alt"></i></div>Download Resume<i
+                            class="fas fa-arrow-right arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <footer>&copy; 2026 <span>Richard Parado</span></footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
